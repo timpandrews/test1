@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', app1.views.home, name='home'),
     url(r'^home/', app1.views.home, name='home'),
+    url(r'^registration/', app1.views.registration, name='registration')
 ]
 
 if settings.DEBUG:
