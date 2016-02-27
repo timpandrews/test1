@@ -31,12 +31,16 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    #django Apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #third party apps
+    'crispy_forms',
+    #myApps
     'app1',
 ]
 
@@ -130,3 +134,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static_root")
 # Media Files (Files uploaded through application ie profile pics)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media_root")
+
+# Crispy_forms Settings
+# http://django-crispy-forms.readthedocs.org/en/latest/index.html
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
