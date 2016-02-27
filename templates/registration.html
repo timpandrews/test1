@@ -1,5 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Registration</h1>
+    <h1>Registration</h1>
+    <p>{{ msg }}</p>
+
+    <form method="POST" action="">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    {% if show_form %}
+        <input class="btn btn-primary" type="submit" value="Sign Up!">
+    {% endif %}
+
+    </form>
+
 {% endblock %}
