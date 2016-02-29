@@ -1,11 +1,11 @@
 from django import forms
 
-from .models import User
+from .models import db
 
 
-class User_Registartion_Form(forms.ModelForm):
+class db_form(forms.ModelForm):
     class Meta:
-        model = User
+        model = db
         fields = ['username', 'email']
 
     ################################

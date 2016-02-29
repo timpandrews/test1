@@ -1,11 +1,11 @@
 from django.contrib import admin
 
 # Register your models here.
-from .forms import User_Registartion_Form
-from .models import User
+from .forms import db_form
+from .models import db
 
-class UserAdmin(admin.ModelAdmin):
+class dbAdmin(admin.ModelAdmin):
     list_display = ["id", "username", "email", "timestamp", "updated"]
-    form = User_Registartion_Form
+    form = db_form
 
-admin.site.register(User, UserAdmin)
+admin.site.register(db, dbAdmin)

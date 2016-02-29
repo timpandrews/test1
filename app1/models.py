@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 from django.db import models
 
 # Create your models here.
-class User(models.Model):
+class db(models.Model):
     username = models.CharField(max_length=30, blank=False)
     email = models.EmailField(blank=False)
     timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)

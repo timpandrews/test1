@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from .forms import User_Registartion_Form
+from .forms import db_form
 
 # Create your views here.
 def home(request):
@@ -12,12 +12,12 @@ def home(request):
 
     return render(request, "home.html", context)
 
-def registration(request):
+def db(request):
 
     msg = "Welcome"
     show_form = True
 
-    form = User_Registartion_Form(request.POST or None)
+    form = db_form(request.POST or None)
 
     context = {
         "msg": msg,
@@ -34,4 +34,4 @@ def registration(request):
             "show_form": show_form,
         }
 
-    return render(request, "registration.html", context)
+    return render(request, "db.html", context)
