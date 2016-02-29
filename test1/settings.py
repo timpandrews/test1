@@ -141,6 +141,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media_root")
 # django-registration-redux Settings
 # https://django-registration-redux.readthedocs.org/en/latest/index.html
 ACCOUNT_ACTIVATION_DAYS = 7
+SITE_ID = 1
+LOGIN_REDIRECT_URL = '/'
 
 
 # crispy_forms Settings
